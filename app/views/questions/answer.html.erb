@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <p class="mb-1"><%= @user_question %></p>
+      <p class="text-muted">- You</p>
+    </div>
+  </div>
+
+  <div class="alert alert-warning mt-3">
+    <p class="mb-1"><%= @coach_answer %></p>
+    <p class="text-muted">- Your coach</p>
+  </div>
+
+  <div class="mt-3">
+    <%= link_to 'Ask another question', '/ask', class: 'btn btn-secondary' %>
+  </div>
+</div>
